@@ -6,17 +6,20 @@
 package s04;
 
 /**
+ * s04Fuel Economy
  *
- * @author Admin
+ * @author Hungnhcce180150
  */
 public class Code {
+
     /**
      * Method to calculate fuel economy in miles per gallon.
-     * 
-     * @param minutes          the number of minutes the car has traveled.
-     * @param speed            the speed of the car in miles per hour.
+     *
+     * @param minutes the number of minutes the car has traveled.
+     * @param speed the speed of the car in miles per hour.
      * @param gasolineConsumed the amount of gasoline consumed in gallons.
-     * @return the fuel efficiency in miles per gallon, rounded to two decimal places.
+     * @return the fuel efficiency in miles per gallon, rounded to two decimal
+     * places.
      */
     public double calculateFuelEconomy(int minutes, double speed, double gasolineConsumed) {
         double hours = minutes / 60.0; // Convert minutes to hours
@@ -25,9 +28,10 @@ public class Code {
     }
 
     /**
-     * Method to calculate the distance traveled based on tire radius and revolutions.
-     * 
-     * @param tireRadius  the radius of the tires in inches.
+     * Method to calculate the distance traveled based on tire radius and
+     * revolutions.
+     *
+     * @param tireRadius the radius of the tires in inches.
      * @param revolutions the number of revolutions of the tires.
      * @return the distance traveled in miles, rounded to two decimal places.
      */
@@ -40,14 +44,16 @@ public class Code {
 
     /**
      * Method to calculate the revised fuel economy in miles per gallon.
-     * 
-     * @param tireRadius       the radius of the tires in inches.
-     * @param revolutions      the number of revolutions of the tires.
+     *
+     * @param tireRadius the radius of the tires in inches.
+     * @param revolutions the number of revolutions of the tires.
      * @param gasolineConsumed the amount of gasoline consumed in gallons.
-     * @return the fuel efficiency in miles per gallon, rounded to two decimal places.
+     * @return the fuel efficiency in miles per gallon, rounded to two decimal
+     * places.
      */
     public double revisedFuelEconomy(double tireRadius, int revolutions, double gasolineConsumed) {
         double distance = calculateDistanceTraveled(tireRadius, revolutions); // Calculate distance traveled
         return distance / gasolineConsumed; // Calculate miles per gallon
     }
+
 }
